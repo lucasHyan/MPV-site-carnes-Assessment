@@ -1,0 +1,26 @@
+/* cores
+    #ee524e vermelho
+    #f0bc4f amarelo
+    #e9460d laranja
+    #24201e preto
+     */
+
+
+
+
+
+header {
+    border:2px solid red;
+    background-color:#24201e;
+    
+}
+
+.ul-header {
+    display: flex;
+    justify-content: space-around;
+       
+}
+
+.il-header {
+    text-decoration: none;
+}
