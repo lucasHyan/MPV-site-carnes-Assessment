@@ -5,67 +5,73 @@
     surface #1C1C1C
      */
 
+body {
+  background-color: #1c1c1c;
+  color: #e83a14;
+}
 
-
-
-
-
-  /* ------------------------------------  HEADER  ---------------------------------------------*/
+/* ------------------------------------  HEADER  ---------------------------------------------*/
 
 header {
-    border-bottom: px solid #E83A14;
-    background-color: #FFFFFF;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-left: 20px;
-    padding-right: 20px;    
-    padding-top: 10px;
-    padding-bottom: 10px;
-    box-shadow: 0 2px 4px rgba(232,58,20,1);
-
+  border-bottom: px solid #e83a14;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  box-shadow: 0 2px 4px rgba(232, 58, 20, 1);
 }
 
 nav a {
-    font-size: 24px;
-    padding-left: 100px;
-    font-family: 'Playfair Display', serif;
-    color:black;
-     
+  font-size: 24px;
+  padding-left: 100px;
+  font-family: "Playfair Display", serif;
+  color: black;
 }
 
 #imagem-header {
-    aspect-ratio: 4/4;
-    width: 10%;
+  aspect-ratio: 4/4;
+  width: 10%;
 }
 
- header a {
-    text-decoration: none; 
-  }
-  
-  /* ------------------------------------  FIM DO HEADER  ---------------------------------------------*/
+header a {
+  text-decoration: none;
+}
+
+/* ------------------------------------  FIM DO HEADER  ---------------------------------------------*/
+
+/* ------------------------------------  QUEM SOMOS ---------------------------------------------*/
+
+#imagem-quem-somos {
+  padding-top: 3px;
+  max-width: 100%;
+  height: auto;
+}
+
+#sobre {
+  padding: 10px 20px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 20%;
+  text-align: center;
+  left: 50%;
+  font-size: 34px;
+  margin: 0;
+  color: #ffffff;
+  /* background-color: #0005; */
+}
+
+h2 {
+  font-family: "Playfair Display", serif;
+  text-align: center;
+}
+
+.paragrafo {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
 
 
-
-    /* ------------------------------------  QUEM SOMOS ---------------------------------------------*/
-
-    #imagem-quem-somos {
-        padding-top: 3px;
-        max-width: 100%;
-        height: auto;
-        position:relative
-      }
-
-      #sobre {
-        padding: 10px 20px ;
-        position: absolute;
-        transform:translate(-50%, -50%);
-        top:20%;
-        text-align: center;
-        left: 50%;
-        font-size: 34px;
-        margin:0;
-        color: #FFFFFF;
-        background-color: #0005;
-        color: #E83A14;
-      }
