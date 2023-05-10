@@ -9,8 +9,11 @@
 
 
 
+
+  /* ------------------------------------  HEADER  ---------------------------------------------*/
+
 header {
-    border-bottom: 10px solid #E83A14;
+    border-bottom: px solid #E83A14;
     background-color: #FFFFFF;
     display: flex;
     justify-content: space-between;
@@ -19,9 +22,17 @@ header {
     padding-right: 20px;    
     padding-top: 10px;
     padding-bottom: 10px;
-    
+    box-shadow: 0 2px 4px rgba(232,58,20,1);
+
 }
 
+nav a {
+    font-size: 24px;
+    padding-left: 100px;
+    font-family: 'Playfair Display', serif;
+    color:black;
+     
+}
 
 #imagem-header {
     aspect-ratio: 4/4;
@@ -32,3 +43,14 @@ header {
     text-decoration: none; 
   }
   
+  /* ------------------------------------  FIM DO HEADER  ---------------------------------------------*/
+
+
+
+    /* ------------------------------------  QUEM SOMOS ---------------------------------------------*/
+
+    #imagem-quem-somos {
+        padding-top: 3px;
+        max-width: 100%;
+        height: auto;
+      }
