@@ -53,4 +53,19 @@ nav a {
         padding-top: 3px;
         max-width: 100%;
         height: auto;
+        position:relative
+      }
+
+      #sobre {
+        padding: 10px 20px ;
+        position: absolute;
+        transform:translate(-50%, -50%);
+        top:20%;
+        text-align: center;
+        left: 50%;
+        font-size: 34px;
+        margin:0;
+        color: #FFFFFF;
+        background-color: #0005;
+
       }
