@@ -1,8 +1,8 @@
 /* cores
-    #ee524e vermelho
-    #f0bc4f amarelo
-    #e9460d laranja
-    #24201e preto
+    Brand #E83A14
+    Neutral muted #C4C4C4
+    neutral #FFFFFF
+    surface #1C1C1C
      */
 
 
@@ -10,17 +10,25 @@
 
 
 header {
-    border:2px solid red;
-    background-color:#24201e;
+    border-bottom: 10px solid #E83A14;
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;    
+    padding-top: 10px;
+    padding-bottom: 10px;
     
 }
 
-.ul-header {
-    display: flex;
-    justify-content: space-around;
-       
+
+#imagem-header {
+    aspect-ratio: 4/4;
+    width: 10%;
 }
 
-.il-header {
-    text-decoration: none;
-}
+ header a {
+    text-decoration: none; 
+  }
+  
