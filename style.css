@@ -85,3 +85,24 @@ h2 {
 }
 
 
+/* ------------------------------------  PRODUTOS ---------------------------------------------*/
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  
+}
+
+.card {
+  width: 250px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 4px;
+  padding: 20px;
+
+}

@@ -4,11 +4,16 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
     <title>LucasHyan</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
     <link href="normalize.css" rel="stylesheet" type="text/css" />
     <link href="style.css" rel="stylesheet" type="text/css" />
     <meta name="author" content="Lucas Hyan" />
-    
+
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap");
       @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
@@ -18,7 +23,11 @@
   <body>
     <section>
       <header>
-        <img id="imagem-header" src="images/logo-Designed-by-Sergey_Kandakov.png" alt="logo da loja"  />
+        <img
+          id="imagem-header"
+          src="images/logo-Designed-by-Sergey_Kandakov.png"
+          alt="logo da loja"
+        />
         <nav>
           <a href="#inicio" title="">Início</a>
           <a href="#sobre" title="">Sobre Nós</a>
@@ -30,29 +39,55 @@
     </section>
 
     <!-- SOBRE NÓS -->
-<section>
-    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+    <section>
+      <div
+        id="carouselExampleAutoplaying"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
         <div class="carousel-inner">
           <div class="carousel-item active c-item">
-            <img src="images/banner-inicial-Photo-by-Lukas.jpg" class="d-block w-100 c-img" alt="...">
+            <img
+              src="images/banner-inicial-Photo-by-Lukas.jpg"
+              class="d-block w-100 c-img"
+              alt="..."
+            />
           </div>
           <div class="carousel-item c-item">
-            <img src="images/Prime-Rib-Photo-by-pascal-claivaz.jpg" class="d-block w-100 c-img" alt="...">
+            <img
+              src="images/Prime-Rib-Photo-by-pascal-claivaz.jpg"
+              class="d-block w-100 c-img"
+              alt="..."
+            />
           </div>
           <div class="carousel-item c-item">
-            <img src="images/wagyu-Photo-by-makafood.jpg" class="d-block w-100 c-img" alt="...">
+            <img
+              src="images/wagyu-Photo-by-makafood.jpg"
+              class="d-block w-100 c-img"
+              alt="..."
+            />
           </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleAutoplaying"
+          data-bs-slide="prev"
+        >
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Previous</span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleAutoplaying"
+          data-bs-slide="next"
+        >
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Next</span>
         </button>
       </div>
-    <!-- <section>
+      <!-- <section>
       <div style="position: relative">
         <img
           id="imagem-quem-somos"
@@ -67,29 +102,50 @@
       <p class="paragrafo">
         Entregamos carnes exóticas de alta qualidade na porta da sua casa.
         Nossos produtos são cuidadosamente selecionados e garantem uma
-        experiência gastronômica única. <br/>
+        experiência gastronômica única. <br />
 
         Aproveite a conveniência de receber essas delícias diretamente em sua
         residência.
       </p>
-
-      
     </section>
 
     <!-- PRODUTOS -->
 
-    <section>
+    
       <h2>Produtos</h2>
 
-      <div>
-        <h3>Prime Ribs Tomahawk</h3>
-        <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium eveniet laboriosam placeat at tempore dignissimos necessitatibus, nulla tenetur mollitia sed quod in rerum vero eligendi suscipit excepturi voluptatum, minus optio?
+      <div class="card-container">
+        <div class="card">
+          <div class="card-img"></div>
+          <div class="card-title">Prime Ribs</div>
+          <p class="card-text">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam
+            expedita, beatae est odit officia nobis, itaque iusto eaque sed a
+            debitis unde! Ipsam provident odit distinctio ab numquam cum
+            corrupti.
+          </p>
+        </div>
+      
+      <div class="card">
+        <div class="card-img"></div>
+        <div class="card-title">Wagyu</div>
+        <p class="card-text">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam
+          expedita, beatae est odit officia nobis, itaque iusto eaque sed a
+          debitis unde! Ipsam provident odit distinctio ab numquam cum corrupti.
         </p>
       </div>
 
-
-    </section>
+      <div class="card">
+        <div class="card-img"></div>
+        <div class="card-title">T-Bone Steak</div>
+        <p class="card-text">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam
+          expedita, beatae est odit officia nobis, itaque iusto eaque sed a
+          debitis unde! Ipsam provident odit distinctio ab numquam cum corrupti.
+        </p>
+      </div>
+    </div>
 
     <!-- RECEITAS -->
 
@@ -103,23 +159,23 @@
       <h2>Contato</h2>
     </section>
 
+    <!-- CRÉDITOS -->
 
- <!-- CRÉDITOS -->
+    <!-- logo by <a href="http://www.freepik.com">Designed by Sergey_Kandakov / Freepik</a> -->
 
-<!-- logo by <a href="http://www.freepik.com">Designed by Sergey_Kandakov / Freepik</a> -->
-
-
-<!-- prime rib 
+    <!-- prime rib 
 
 Photo by pascal claivaz: https://www.pexels.com/photo/grilled-meat-410648/ -->
 
- <!-- Photo by Lukas: https://www.pexels.com/photo/ flat-lay-photography-of-slice-of-meat-on-top-of-chopping-board-sprinkled-with-ground-peppercorns-618775/ -->
+    <!-- Photo by Lukas: https://www.pexels.com/photo/ flat-lay-photography-of-slice-of-meat-on-top-of-chopping-board-sprinkled-with-ground-peppercorns-618775/ -->
 
+    <!-- Photo by makafood: https://www.pexels.com/photo/grilling-of-wagyu-beef-8934875/ -->
 
-
- <!-- Photo by makafood: https://www.pexels.com/photo/grilling-of-wagyu-beef-8934875/ -->
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
     <script src="script.js"></script>
   </body>
 </html>
