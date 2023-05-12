@@ -46,13 +46,13 @@ header a {
 /* ------------------------------------  QUEM SOMOS ---------------------------------------------*/
 
 .c-item {
-height: 480px;
+  height: 480px;
 }
 
 .c-img {
-height:100%;
-object-fit: cover;
-filter: brightness(0.6);
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.6);
 }
 
 #imagem-quem-somos {
@@ -80,10 +80,9 @@ h2 {
 }
 
 .paragrafo {
-    text-align: center;
-    font-family: 'Roboto', sans-serif;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
 }
-
 
 /* ------------------------------------  PRODUTOS ---------------------------------------------*/
 
@@ -92,7 +91,6 @@ h2 {
   justify-content: center;
   align-items: center;
   gap: 15px;
-  
 }
 
 .card {
@@ -102,7 +100,27 @@ h2 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 4px;
+  border-radius: 4px;
   padding: 20px;
+}
+
+.card > * {
+  padding: 10px;
+}
+
+.card .card-img img {
+  height: 100%;
+  width: 100%;
+
+  background-position: center center;
+  background-size: cover;
+
+}
+
+.card .card-title {
+  font-family: "Playfair Display", serif;
+  font-size: 1.5rem;
+  padding: 20px 10px;
+  text-transform: uppercase;
 
 }
