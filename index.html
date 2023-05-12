@@ -17,7 +17,7 @@
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap");
       @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
-      @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+      @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
     </style>
   </head>
 
@@ -87,7 +87,6 @@
           <span class="visually-hidden">Next</span>
         </button>
       </div>
-      
 
       <h2 id="#sobre">SOBRE NÓS</h2>
 
@@ -96,7 +95,7 @@
           Entregamos carnes exóticas de alta qualidade na porta da sua casa.
           Nossos produtos são cuidadosamente selecionados e garantem uma
           experiência gastronômica única. <br />
-  
+
           Aproveite a conveniência de receber essas delícias diretamente em sua
           residência.
         </p>
@@ -160,7 +159,7 @@
 
         <h3 class="card-titulo">Wagyu</h3>
 
-        <div class="border"></div> 
+        <div class="border"></div>
 
         <p class="info">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -172,31 +171,81 @@
       </div>
     </div>
 
-    
     <!-- CONTATO -->
 
     <section>
       <h2 id="contato">Está em duvida? entre em contato conosco</h2>
 
-    <div id="container-form">
-      <div class="form-flex">
-        <form action="">
-          <h3>Contato</h3>
-          <label>Nome</label>
-          <input type="text" name="name" placeholder="Digite seu nome" autocomplete="off">
-          <label>Email</label>
-          <input type="email" name="email" placeholder="Digite seu email" autocomplete="on">
-          <label>Mensagem</label>
-          <textarea name="message" cols="30" rows="10" placeholder="Digite a sua mensagem"></textarea>
-          <button id="botao-form" type="submit">Enviar</button>
-    
-        </form>
+      <div class="container-form">
+        <div class="form-flex">
+          <form action="">
+            <h3 class="h3-form">Contato</h3>
+            <label>Nome</label>
+            <input
+              type="text"
+              name="name"
+              placeholder="Digite seu nome"
+              autocomplete="off"
+            />
+            <label>telefone</label>
+            <input
+              type=""
+              name="telefone"
+              placeholder="Digite seu telefone"
+              autocomplete="off"
+            />
+            <label>Email</label>
+            <input
+              type="email"
+              name="email"
+              placeholder="Digite seu email"
+              autocomplete="on"
+            />
+
+            
+            <label>Mensagem</label>
+            <textarea
+            name="message"
+            cols="30"
+            rows="10"
+            placeholder="Digite a sua mensagem"
+            ></textarea>
+            
+            <div>
+              <h3 class="h3-form">Preferencias</h3>
+              <input type="radio" value="Carnes exóticas" name="carnes-radio"/>
+              <label for="Carnes exóticas">Carnes exóticas</label><br />
+              <input type="radio" value="Carnes tradicionais" name="carnes-radio"/>
+              <label for="Carnes tradicionais">Carnes tradicionais</label><br />
+              <input type="radio" value="Ambas" name="carnes-radio"/>
+               <label for="Ambas">Ambas</label><br />
+            </div>
+            <div>
+              <label id="label-tipos-carnes">Escolha o seu tipo de carne preferido</label>
+              <select name="tipos-carnes">
+                <option value="Bovina">Bovina</option>
+                <option value="Suína">Suína</option>
+                <option value="Aves">Aves</option>
+                <option value="Frutos do Mar">Frutos do Mar</option>
+                <option value="Outras">Outas</option>
+              </select>
+            </div>
+            <button id="botao-form" type="submit">Enviar</button>
+          </form>
+        </div>
       </div>
+    </section>
+
+    <div id="container-iframe">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.1978093307303!2d-43.1816893184496!3d-22.906073684338022!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x997f5fd24e0bdd%3A0x99447fc2607f1de1!2sInstituto%20Infnet%20-%20Faculdade%20de%20Tecnologia%2C%20Engenharia%2C%20Computa%C3%A7%C3%A3o%2C%20Software%2C%20Sistemas%20e%20Marketing%20Digital!5e0!3m2!1spt-BR!2sbr!4v1683916670240!5m2!1spt-BR!2sbr"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
     </div>
 
-
-
-    </section>
+    <footer></footer>
 
     <!-- CRÉDITOS -->
 
