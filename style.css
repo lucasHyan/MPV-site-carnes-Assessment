@@ -65,7 +65,7 @@ header a {
   height: auto;
 }
 
-#sobre {
+/* #sobre {
   padding: 10px 20px;
   position: absolute;
   transform: translate(-50%, -50%);
@@ -75,14 +75,15 @@ header a {
   font-size: 34px;
   margin: 0;
   color: #ffffff;
-  /* background-color: #0005; */
-}
+  /* background-color: #0005; 
+}*/
+
 
 h2 {
   font-family: "Playfair Display", serif;
   text-align: center;
   margin-top: 100px;
-  margin-bottom: 50px;
+  margin-bottom: 100px;
 }
 
 #container-paragrafo {
@@ -171,7 +172,7 @@ h2 {
   justify-content: center;
 }
 
-#h2-contato {
+#contato {
   margin-top: 150px;
   margin-bottom: 150px;
   
