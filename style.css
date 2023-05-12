@@ -226,6 +226,13 @@ textarea {
 
 }
 
+.container-select{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
 #botao-form {
   width: 100%;
   cursor:pointer;
@@ -238,10 +245,7 @@ textarea {
 transition: 1s;
 }
 
-#label-tipos-carnes {
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
+
 
 #botao-form:hover {
 background: red;

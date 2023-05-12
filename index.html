@@ -202,26 +202,29 @@
               autocomplete="on"
             />
 
-            
             <label>Mensagem</label>
             <textarea
-            name="message"
-            cols="30"
-            rows="10"
-            placeholder="Digite a sua mensagem"
+              name="message"
+              cols="30"
+              rows="10"
+              placeholder="Digite a sua mensagem"
             ></textarea>
-            
+
             <div>
               <h3 class="h3-form">Preferencias</h3>
-              <input type="radio" value="Carnes exóticas" name="carnes-radio"/>
+              <input type="radio" value="Carnes exóticas" name="carnes-radio" />
               <label for="Carnes exóticas">Carnes exóticas</label><br />
-              <input type="radio" value="Carnes tradicionais" name="carnes-radio"/>
+              <input
+                type="radio"
+                value="Carnes tradicionais"
+                name="carnes-radio"
+              />
               <label for="Carnes tradicionais">Carnes tradicionais</label><br />
-              <input type="radio" value="Ambas" name="carnes-radio"/>
-               <label for="Ambas">Ambas</label><br />
+              <input type="radio" value="Ambas" name="carnes-radio" />
+              <label for="Ambas">Ambas</label><br />
             </div>
-            <div>
-              <label id="label-tipos-carnes">Escolha o seu tipo de carne preferido</label>
+            <h3 class="h3-form">Escolha o seu tipo de carne preferido</h3>
+            <div class="container-select">
               <select name="tipos-carnes">
                 <option value="Bovina">Bovina</option>
                 <option value="Suína">Suína</option>
