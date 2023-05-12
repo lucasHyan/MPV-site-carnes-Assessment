@@ -31,6 +31,10 @@ nav a {
   font-family: "Playfair Display", serif;
   color: black;
 }
+nav a:hover{
+  transition: 0.3s;
+  color:#e83a14 ;
+}
 
 #imagem-header {
   aspect-ratio: 4/4;
@@ -77,11 +81,27 @@ header a {
 h2 {
   font-family: "Playfair Display", serif;
   text-align: center;
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+
+#container-paragrafo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
 }
 
 .paragrafo {
   text-align: center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
   font-family: "Roboto", sans-serif;
+  width: 50%;
+  padding-top: 30px;
+  height: 150px;
+  box-shadow: rgba(139, 133, 133, 0.35) 0px 5px 15px;
 }
 
 /* ------------------------------------  PRODUTOS ---------------------------------------------*/
@@ -152,8 +172,9 @@ h2 {
 }
 
 #h2-contato {
-  margin-top: 200px;
-  margin-bottom: 100px;
+  margin-top: 150px;
+  margin-bottom: 150px;
+  
 }
 
 .form-flex {
