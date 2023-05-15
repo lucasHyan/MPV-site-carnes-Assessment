@@ -138,6 +138,7 @@ h2 {
   height: auto;
   display: flex;
   align-items: center;
+  border: 0;
 }
 
 .card-titulo {
@@ -178,8 +179,8 @@ h2 {
 
 
 .card-imagem img {
-  width: 100%;
-  height: auto;
+  width: 250px;
+  height: 200px;
 }
 
 /* ------------------------------------  Contato ---------------------------------------------*/
