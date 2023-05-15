@@ -290,12 +290,39 @@ iframe{
 
 /* ------------------------------------  Footer ---------------------------------------------*/
 footer {
-  background-color: #f5f5f5;
+  background-color: #1c1c1c;
   
 }
 
+.container-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.card-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 400px;
+  height: 400px;
+text-align: center
+}
+
+footer div h3 {
+  font-family: "Playfair Display", serif;
+  text-align: center;
+ 
+}
 #imagem-footer {
   padding-top: 10px;
   padding-left: 10px;
   padding-bottom: 10px;
+  
+}
+
+.container-creditos {
+  background-color: #1c1c1c;
+  display: flex;
+  justify-content: space-around;
 }
