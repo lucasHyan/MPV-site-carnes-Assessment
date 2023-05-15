@@ -309,20 +309,49 @@ footer {
 text-align: center
 }
 
+.card-footer-lista {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 400px;
+  height: 400px;
+  font-size: 24px;
+  
+}
+
+.card-footer-lista a {
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  color: white;
+}
+
+.card-footer-lista a:hover {
+  transition: 0.3s;
+  color:#e83a14 ;
+}
+
 footer div h3 {
   font-family: "Playfair Display", serif;
   text-align: center;
  
 }
-#imagem-footer {
-  padding-top: 10px;
-  padding-left: 10px;
-  padding-bottom: 10px;
-  
+
+
+.container-creditos a {
+  font-family: "Playfair Display", serif;
+  color: white;
 }
 
 .container-creditos {
   background-color: #1c1c1c;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  padding-bottom: 20px;
+
+}
+
+.container-creditos a {
+  text-decoration: none;
+  color: white;
+  padding-bottom: 20px;
 }
