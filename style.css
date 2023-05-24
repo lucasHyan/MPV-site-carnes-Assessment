@@ -249,6 +249,34 @@ textarea {
   justify-content: center;
 }
 
+
+.container-radio {
+display: flex;
+align-items: center;
+}
+.radio {
+width: 20px;
+height: 20px;
+border: 2px solid rgb(245, 239, 239);
+border-radius: 8px;
+cursor: pointer;
+margin-right: 10px;
+margin-left: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 #botao-form {
   width: 100%;
   cursor: pointer;
