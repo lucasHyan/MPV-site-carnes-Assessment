@@ -1,14 +1,15 @@
-/* cores
-    Brand #E83A14
-    Neutral muted #C4C4C4
-    neutral #FFFFFF
-    surface #1C1C1C
-     */
+:root {
+  --brand: #E83A14;
+  --neutral-muted: #C4C4C4;
+  --neutral: #FFFFFF;
+  --surface: #1C1C1C;
+}
 
 body {
-  background-color: #1c1c1c;
-  color: #e83a14;
+  background-color: var(--surface);
+  color: var(--brand);
 }
+
 #myBtn {
   display: none;
   position: fixed;
@@ -17,7 +18,7 @@ body {
   z-index: 99;
   border: none;
   outline: none;
-  background-color: #e83a14;
+  background-color: var(--brand);
   color: white;
   cursor: pointer;
   padding: 15px;
@@ -31,8 +32,8 @@ body {
 /* ------------------------------------  HEADER  ---------------------------------------------*/
 
 header {
-  border-bottom: 1px solid #e83a14;
-  background-color: #ffffff;
+  border-bottom: 1px solid var(--brand);
+  background-color: var(--neutral);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -51,7 +52,7 @@ nav a {
 }
 nav a:hover {
   transition: 0.3s;
-  color: #e83a14;
+  color: var(--brand);
 }
 
 #imagem-header {
@@ -62,6 +63,7 @@ nav a:hover {
 header a {
   text-decoration: none;
 }
+
 
 /* ------------------------------------  FIM DO HEADER  ---------------------------------------------*/
 
@@ -82,19 +84,6 @@ header a {
   max-width: 100%;
   height: auto;
 }
-
-/* #sobre {
-  padding: 10px 20px;
-  position: absolute;
-  transform: translate(-50%, -50%);
-  top: 20%;
-  text-align: center;
-  left: 50%;
-  font-size: 34px;
-  margin: 0;
-  color: #ffffff;
-  /* background-color: #0005; 
-}*/
 
 h2 {
   font-family: "Playfair Display", serif;
@@ -172,14 +161,13 @@ h2 {
   transition-duration: 0.4s;
 }
 .button:hover {
-  background-color: #e83a14;
+  background-color: var(--brand);
 }
 
 .card-imagem img {
   width: 250px;
   height: 200px;
 }
-
 /* ------------------------------------  Contato ---------------------------------------------*/
 
 .container-form {
@@ -197,7 +185,7 @@ h2 {
   box-shadow: rgba(255, 255, 255, 0.25) 0px 54px 55px,
     rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
     rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-  background-color: #0c0202;
+  background-color: var(--surface);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -207,7 +195,7 @@ h2 {
 }
 
 .h3-form {
-  color: #f5f5f5;
+  color: var(--neutral);
   font-size: 2.5rem;
   margin: 2rem;
   text-align: center;
@@ -222,7 +210,7 @@ form {
 }
 
 label {
-  color: #f5f5f5;
+  color: var(--neutral);
   font-size: 20px;
   margin-bottom: 4px;
   font-family: "Roboto", sans-serif;
@@ -249,22 +237,24 @@ textarea {
   justify-content: center;
 }
 
-
 .container-radio {
-display: flex;
-align-items: center;
+  display: flex;
+  align-items: center;
 }
+
 .radio {
-width: 20px;
-height: 20px;
-border: 2px solid rgb(245, 239, 239);
-border-radius: 8px;
-cursor: pointer;
-margin-right: 10px;
-margin-left: 10px;
+  width: 20px;
+  height: 20px;
+  border: 2px solid var(--neutral-muted);
+  border-radius: 8px;
+  cursor: pointer;
+  margin-right: 10px;
+  margin-left: 10px;
 }
 
-
+.radio-marcado {
+  background-color: var(--brand);
+}
 
 
 
@@ -282,8 +272,8 @@ margin-left: 10px;
   cursor: pointer;
   font-size: 16px;
   background: transparent;
-  border: 2px solid white;
-  color: white;
+  border: 2px solid var(--neutral);
+  color: var(--neutral);
   margin-top: 20px;
   margin-bottom: 20px;
   transition: 1s;
@@ -291,8 +281,8 @@ margin-left: 10px;
 }
 
 #botao-form:hover {
-  background: #e76a16;
-  color: #1c1c1c;
+  background: var(--brand);
+  color: var(--surface);
   border-radius: 16px;
 }
 
@@ -313,7 +303,7 @@ iframe {
 
 /* ------------------------------------  Footer ---------------------------------------------*/
 footer {
-  background-color: #1c1c1c;
+  background-color: var(--surface);
 }
 
 .container-footer {
@@ -343,22 +333,22 @@ footer {
 .card-footer-lista a {
   text-decoration: none;
   font-family: "Roboto", sans-serif;
-  color: white;
+  color: var(--neutral);
 }
 
 .card-footer-lista a:hover {
   transition: 0.3s;
-  color: #e83a14;
+  color: var(--brand);
 }
 
 footer div h3 {
   font-family: "Playfair Display", serif;
   text-align: center;
-  color: white;
+  color: var(--neutral);
 }
 
 .container-creditos {
-  background-color: #1c1c1c;
+  background-color: var(--surface);
   display: flex;
   justify-content: center;
   padding-bottom: 20px;
@@ -366,19 +356,19 @@ footer div h3 {
 
 .container-creditos a {
   text-decoration: none;
-  color: white;
+  color: var(--neutral);
   padding-bottom: 20px;
   font-family: "Playfair Display", serif;
 }
 
 .container-creditos a:hover {
   transition: 0.3s;
-  color: #e83a14;
+  color: var(--brand);
 }
 
 #h3-creditos {
   text-decoration: none;
-  color: white;
+  color: var(--neutral);
   padding-bottom: 20px;
   font-family: "Playfair Display", serif;
   text-align: center;
@@ -386,5 +376,5 @@ footer div h3 {
 
 #h3-creditos:hover {
   transition: 0.3s;
-  color: #e83a14;
+  color: var(--brand);
 }
