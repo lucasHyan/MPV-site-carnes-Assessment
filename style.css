@@ -190,7 +190,7 @@ h2 {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  padding: 10px 45px;
+  /* padding: 10px 45px; */
   width: 500px;
 }
 
@@ -201,12 +201,14 @@ h2 {
   text-align: center;
   font-weight: bold;
   font-family: "Roboto", sans-serif;
+  margin: 10px 45px;
 }
 
 form {
   display: flex;
   flex-direction: column;
   width: 100%;
+  margin: 10px 45px;
 }
 
 label {
@@ -214,12 +216,14 @@ label {
   font-size: 20px;
   margin-bottom: 4px;
   font-family: "Roboto", sans-serif;
+  margin: 10px 45px;
 }
 
 input {
   padding: 15px;
   outline: none;
   border: 0;
+  margin: 10px 45px;
 }
 input:focus {
   border-radius: 16px;
@@ -228,6 +232,7 @@ input:focus {
 
 textarea {
   padding: 10px;
+  margin: 10px 45px;
 }
 
 .container-select {
@@ -243,20 +248,32 @@ textarea {
 }
 
 .radio {
-  width: 20px;
-  height: 20px;
+  width: 30px;
+  height: 25px;
   border: 2px solid var(--neutral-muted);
-  border-radius: 8px;
+  border-radius: 5px;
   cursor: pointer;
   margin-right: 10px;
   margin-left: 10px;
+}
+
+.radio:hover {
+  background-color: var(--brand);
+  transition-duration: 0.4s;
 }
 
 .radio-marcado {
   background-color: var(--brand);
 }
 
-
+.container-radio span {
+  letter-spacing: 1.5px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding-right: 10px;
+  color: var(--neutral);
+  
+}
 
 
 
@@ -278,6 +295,9 @@ textarea {
   margin-bottom: 20px;
   transition: 1s;
   height: 50px;
+  letter-spacing: 1.5px;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 #botao-form:hover {
