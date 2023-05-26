@@ -32,3 +32,22 @@ radioButtons.forEach((radio) => {
     radio.classList.add("radio-marcado");
   });
 });
+
+//select
+const selectOptions = document.querySelector(".options");
+const selectBtn = document.querySelector(".select-btn");
+const selectBtnSpan = document.querySelector(".select-btn span");
+const selectOption = document.querySelectorAll(".option");
+
+
+selectBtn.addEventListener("click", () => {  selectOptions.classList.toggle("desativa");
+})
+
+
+selectOption.forEach(option => {
+  option.addEventListener("click", () => {
+    selectBtnSpan.innerText = option.innerText;
+    selectOptions.classList.toggle("desativa")
+  });
+});
+
