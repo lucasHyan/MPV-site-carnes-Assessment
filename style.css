@@ -276,38 +276,50 @@ textarea {
 }
 
 
+.select-menu {
+  width: auto;
+}
+.select-btn {
+display: flex;
+height: 55px;
+background: var(--neutral);
+padding: 20px;
+font-size: 18px;
+align-items: center;
+justify-content: space-between;
+cursor: pointer;
 
-.custom-select {
+}
+.select-btn i {
+  font-size: 25px;
+
+}
+.options {
   display: flex;
   flex-direction: column;
-  position: relative;
+  align-items: center;
+  background: var(--neutral);
+  margin-top: 10px;
+  padding: 20px;
+  /* padding-left: 20px; */
+  width: auto;
 }
 
-.select-selected {
-  background-color: #f1f1f1;
-  padding: 8px;
+.option {
+  display: flex;
+  height: 50px;
+  width: 100%; 
+  border-radius: 8px;
   cursor: pointer;
+  align-items: center;
+  background-color: var(--neutral);
+  padding-left: 10px;
 }
 
-.select-items {
-  /* display: none; */
-  flex-direction: column;
-  background-color: #f1f1f1;
-  width: 100%;
-  max-height: 200px;
-  z-index: 1;
-}
 
-.select-item {
-  padding: 8px;
-  cursor: pointer;
+.option:hover{
+  background-color: var(--neutral-muted);
 }
-
-.select-item:hover {
-  background-color: #888;
-  color: #fff;
-}
-
 
 
 
