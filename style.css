@@ -290,10 +290,15 @@ justify-content: space-between;
 cursor: pointer;
 
 }
-.select-btn i {
-  font-size: 25px;
-
+.arrow-icon {
+  transition: 0.2s;
 }
+
+.arrow-icon.rotate {
+  transform: rotate(180deg);
+}
+
+
 .options {
   display: flex;
   flex-direction: column;

@@ -38,16 +38,17 @@ const selectOptions = document.querySelector(".options");
 const selectBtn = document.querySelector(".select-btn");
 const selectBtnSpan = document.querySelector(".select-btn span");
 const selectOption = document.querySelectorAll(".option");
+const arrowIcon = document.querySelector(".arrow-icon");
 
-
-selectBtn.addEventListener("click", () => {  selectOptions.classList.toggle("desativa");
-})
-
+selectBtn.addEventListener("click", () => {
+  selectOptions.classList.toggle("desativa");
+  arrowIcon.classList.toggle("rotate");
+});
 
 selectOption.forEach(option => {
   option.addEventListener("click", () => {
     selectBtnSpan.innerText = option.innerText;
-    selectOptions.classList.toggle("desativa")
+    selectOptions.classList.toggle("desativa");
+    arrowIcon.classList.toggle("rotate");
   });
 });
-
