@@ -245,6 +245,7 @@ textarea {
 .container-radio {
   display: flex;
   align-items: center;
+  margin-bottom: 2rem;
 }
 
 .radio {
@@ -329,6 +330,47 @@ cursor: pointer;
   background-color: var(--neutral-muted);
 }
 
+
+
+.container-checkbox {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+
+}
+
+.checkbox {
+  width: 30px;
+  height: 25px;
+  border: 2px solid var(--neutral-muted);
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.container-checkbox div {
+  display: flex;
+}
+
+.checkbox:hover {
+  background-color: var(--brand);
+  transition-duration: 0.4s;
+}
+
+.radio-marcado {
+  background-color: var(--brand);
+}
+
+.container-checkbox span {
+  letter-spacing: 1.5px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding-right: 10px;
+  color: var(--neutral);
+}
 
 
 
