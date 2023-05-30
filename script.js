@@ -52,3 +52,16 @@ selectOption.forEach(option => {
     arrowIcon.classList.toggle("rotate");
   });
 });
+
+
+//checkbox
+const containerCheckbox = document.querySelector(".containerCheckbox");
+const checkboxElemento = document.querySelectorAll(".checkbox");
+
+
+checkboxElemento.forEach(elemento => {
+  elemento.addEventListener("click", () => {
+    elemento.classList.toggle("checkbox-marcado")
+  })
+  
+});
