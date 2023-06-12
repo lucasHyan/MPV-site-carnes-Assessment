@@ -57,11 +57,29 @@ selectOption.forEach(option => {
 //checkbox
 const containerCheckbox = document.querySelector(".containerCheckbox");
 const checkboxElemento = document.querySelectorAll(".checkbox");
-
+const checkboxAmbos =  document.querySelector(".checkbox-ambos");
+console.log(checkboxElemento);
 
 checkboxElemento.forEach(elemento => {
   elemento.addEventListener("click", () => {
     elemento.classList.toggle("checkbox-marcado")
+
+    
   })
   
 });
+
+checkboxAmbos.addEventListener("click", () => {
+  checkboxAmbos.classList.toggle("checkbox-marcado");
+  
+  if (checkboxAmbos.classList.contains("checkbox-marcado")) {
+    checkboxElemento.forEach(elemento => {
+      elemento.classList.add("checkbox-marcado");
+    });
+  } else {
+    checkboxElemento.forEach(elemento => {
+      elemento.classList.remove("checkbox-marcado");
+    });
+  }
+});
+

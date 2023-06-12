@@ -351,6 +351,17 @@ cursor: pointer;
   margin-left: 10px;
 }
 
+.checkbox-ambos {
+  width: 30px;
+  height: 25px;
+  border: 2px solid var(--neutral-muted);
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+
 .container-checkbox div {
   display: flex;
 }
