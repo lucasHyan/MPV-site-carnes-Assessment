@@ -58,33 +58,23 @@ selectOption.forEach(option => {
 const containerCheckbox = document.querySelector(".containerCheckbox");
 const checkboxElemento = document.querySelectorAll(".checkbox");
 const checkboxAmbos =  document.querySelector(".checkbox-ambos");
-console.log(checkboxElemento);
 
 checkboxElemento.forEach(elemento => {
   elemento.addEventListener("click", () => {
     elemento.classList.toggle("checkbox-marcado");
 
-    if (checkboxElemento[0].classList.contains("checkbox-marcado")
-    && !checkboxElemento[1].classList.contains("checkbox-marcado")) {
+    const elemento1IsChecked = checkboxElemento[0].classList.contains("checkbox-marcado");
+    const elemento2IsChecked = checkboxElemento[1].classList.contains("checkbox-marcado");
+
+    if (elemento1IsChecked && !elemento2IsChecked || !elemento1IsChecked && elemento2IsChecked) {
       checkboxAmbos.classList.add("checkbox-horizontal-marcado");
-    } 
-
-    if (checkboxElemento[1].classList.contains("checkbox-marcado")
-    && !checkboxElemento[0].classList.contains("checkbox-marcado")) {
-      checkboxAmbos.classList.add("checkbox-horizontal-marcado");
-    } 
-
-    if (checkboxElemento[1].classList.contains("checkbox-marcado") &&
-      checkboxElemento[0].classList.contains("checkbox-marcado")) { 
-        checkboxAmbos.classList.remove("checkbox-horizontal-marcado");
-        checkboxAmbos.classList.add("checkbox-marcado");
-      }
-
-      if(!checkboxElemento[1].classList.contains("checkbox-marcado") &&
-      !checkboxElemento[0].classList.contains("checkbox-marcado")) {
-        checkboxAmbos.classList.remove("checkbox-marcado");
-        checkboxAmbos.classList.remove("checkbox-horizontal-marcado");
-      }
+    } else if (elemento1IsChecked && elemento2IsChecked) { 
+      checkboxAmbos.classList.remove("checkbox-horizontal-marcado");
+      checkboxAmbos.classList.add("checkbox-marcado");
+    } else {
+      checkboxAmbos.classList.remove("checkbox-marcado");
+      checkboxAmbos.classList.remove("checkbox-horizontal-marcado");
+    }
   });
 });
 
