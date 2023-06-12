@@ -62,16 +62,37 @@ console.log(checkboxElemento);
 
 checkboxElemento.forEach(elemento => {
   elemento.addEventListener("click", () => {
-    elemento.classList.toggle("checkbox-marcado")
+    elemento.classList.toggle("checkbox-marcado");
 
-    
-  })
-  
+    if (checkboxElemento[0].classList.contains("checkbox-marcado")
+    && !checkboxElemento[1].classList.contains("checkbox-marcado")) {
+      checkboxAmbos.classList.add("checkbox-horizontal-marcado");
+    } 
+
+    if (checkboxElemento[1].classList.contains("checkbox-marcado")
+    && !checkboxElemento[0].classList.contains("checkbox-marcado")) {
+      checkboxAmbos.classList.add("checkbox-horizontal-marcado");
+    } 
+
+    if (checkboxElemento[1].classList.contains("checkbox-marcado") &&
+      checkboxElemento[0].classList.contains("checkbox-marcado")) { 
+        checkboxAmbos.classList.remove("checkbox-horizontal-marcado");
+        checkboxAmbos.classList.add("checkbox-marcado");
+      }
+
+      if(!checkboxElemento[1].classList.contains("checkbox-marcado") &&
+      !checkboxElemento[0].classList.contains("checkbox-marcado")) {
+        checkboxAmbos.classList.remove("checkbox-marcado");
+        checkboxAmbos.classList.remove("checkbox-horizontal-marcado");
+      }
+  });
 });
 
+//checkbox all
 checkboxAmbos.addEventListener("click", () => {
   checkboxAmbos.classList.toggle("checkbox-marcado");
-  
+  checkboxAmbos.classList.remove("checkbox-horizontal-marcado");
+
   if (checkboxAmbos.classList.contains("checkbox-marcado")) {
     checkboxElemento.forEach(elemento => {
       elemento.classList.add("checkbox-marcado");
@@ -82,4 +103,3 @@ checkboxAmbos.addEventListener("click", () => {
     });
   }
 });
-
