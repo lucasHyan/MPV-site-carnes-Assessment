@@ -1,3 +1,5 @@
+"use strict"
+
 // botão voltar ao topo
 window.onscroll = () => {
   if (
@@ -17,9 +19,9 @@ function topFunction() {
 
 const radioButtons = Array.from(document.body.getElementsByClassName("radio"));
 
-radioButtons.forEach((radio) => {
-  radio.addEventListener("click", () => {
-    const confereRadio = radio.classList.contains("radio-marcado");
+radioButtons.forEach((element) => {
+  element.addEventListener("click", () => {
+    const confereRadio = element.classList.contains("radio-marcado");
 
     if (confereRadio) {
       return;
@@ -29,7 +31,7 @@ radioButtons.forEach((radio) => {
       outroRadio.classList.remove("radio-marcado");
     });
 
-    radio.classList.add("radio-marcado");
+    element.classList.add("radio-marcado");
   });
 });
 
@@ -45,9 +47,9 @@ selectBtn.addEventListener("click", () => {
   arrowIcon.classList.toggle("rotate");
 });
 
-selectOption.forEach(option => {
-  option.addEventListener("click", () => {
-    selectBtnSpan.innerText = option.innerText;
+selectOption.forEach(element => {
+  element.addEventListener("click", () => {
+    selectBtnSpan.innerText = element.innerText;
     selectOptions.classList.toggle("desativa");
     arrowIcon.classList.toggle("rotate");
   });
@@ -92,4 +94,64 @@ checkboxAmbos.addEventListener("click", () => {
       elemento.classList.remove("checkbox-marcado");
     });
   }
+});
+
+
+//form
+
+const form = document.querySelector('form');
+const nomeInput = document.querySelector('input[name="name"]');
+const emailInput = document.querySelector('input[name="email"]');
+const telefoneInput = document.querySelector('input[name="telefone"]');
+const mensagemInput = document.querySelector('textarea[name="message"]');
+
+form.addEventListener('submit', (event) => {
+  event.preventDefault();
+  
+
+
+// Validar nome
+  const nomeTrim = nomeInput.value.trim();
+  if (nomeTrim === '' || nomeTrim.split(' ').length < 2) {
+    alert(`Nome não pode estar em branco e deve possuir pelo menos 2 nomes`);
+    return;
+  }
+
+  // Validar email
+  const email = emailInput.value.trim();
+  if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+    alert('E-mail inválido');
+    return;
+  }
+
+  // Validar telefone
+  const telefone = telefoneInput.value.replace(/[\(\)\-\s]/g, '');
+  if (telefone.length !== 11) {
+    alert('Telefone inválido');
+    return;
+  }
+  
+  // Validar mensagem
+  const mensagem = mensagemInput.value.trim();
+  if (mensagem.length < 5) {
+    alert('Por favor escreva uma mensagem com pelo menos 5 caracteres');
+    return;
+  }
+
+
+// Validar radio buttons
+const radioMarcadoBoolean = radioButtons.some(element =>
+   element.classList.contains('radio-marcado'));
+
+if (!radioMarcadoBoolean) {
+  alert('Selecione uma preferência de carnes');
+  return;
+}
+
+//validar select
+
+
+
+// Se chegou aqui, o formulário está válido
+alert('Formulário enviado com sucesso!');
 });
