@@ -1,6 +1,10 @@
 "use strict";
 
 // botão voltar ao topo
+const botaoTopo = document.getElementById("myBtn");
+
+botaoTopo.addEventListener("click", topFunction);
+
 window.onscroll = () => {
   if (
     document.body.scrollTop > 200 ||
@@ -11,6 +15,7 @@ window.onscroll = () => {
     document.getElementById("myBtn").style.display = "none";
   }
 };
+
 function topFunction() {
   document.documentElement.scrollTop = 0;
 }
