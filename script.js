@@ -89,7 +89,7 @@ checkboxElemento.forEach((elemento) => {
   });
 });
 
-//checkbox all
+//checkbox ambos
 checkboxAmbos.addEventListener("click", () => {
   checkboxAmbos.classList.toggle("checkbox-marcado");
   checkboxAmbos.classList.remove("checkbox-horizontal-marcado");
